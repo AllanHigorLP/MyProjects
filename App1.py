@@ -1,3 +1,4 @@
+#Função para transformar um número inteiro em um número romano
 def int_rom(n):
     if(0< n <3999):
         ints = (1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1)
@@ -13,11 +14,10 @@ def int_rom(n):
 
 
 
-
+#entrada de dados
 valido = False
 while not valido:
     ano = input("")
-    
     if not ano.isdigit():
         print("Por favor, digite um ano entre 1 e 9999.")
     elif(len(ano))>4 or int(ano)==0:
@@ -25,10 +25,10 @@ while not valido:
     else:
         valido = True
 
+        
 
 sec = 0
 tam_ano = len(ano)
-
 
 if(tam_ano <= 2):
     sec = 1
